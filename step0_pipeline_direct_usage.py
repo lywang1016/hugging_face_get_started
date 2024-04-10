@@ -16,7 +16,7 @@ print(res)
 # Chinese to English
 zh_en_translator = pipeline("translation", model="Helsinki-NLP/opus-mt-zh-en")
 
-res = zh_en_translator("哎呦，你干嘛？", src_lang='zh', tgt_lang='en') 
+res = zh_en_translator("你干嘛？哎呦...", src_lang='zh', tgt_lang='en') 
 print(res[0]['translation_text'])
 
 # Test use default model
